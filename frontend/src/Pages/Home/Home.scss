@@ -1,0 +1,125 @@
+@import "../../Variable.scss";
+
+.Home-body{
+    min-height: 100vh;
+    margin-top: 75.19px;
+
+    >.search{
+        height: 75px;
+        position: fixed;
+        top: 75.19px;
+        width: 100%;
+        background-color: white;
+        padding: 0 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+   
+
+        >.first{
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            width: 95%;
+     
+           
+          
+            svg{
+                font-size: x-large;
+
+            }
+            >form{
+            width: 100%;
+            >input{
+                width: 100%;
+             padding: 20px 10px;
+             font-size: large;
+             border: none;
+             box-sizing: border-box;
+        &:focus{
+                outline: none;
+                border: none;
+            }
+            
+            }
+        }
+           
+        }
+        >button{
+            background-color: white;
+            font-size: larger;
+            padding: 0 10px;
+            
+
+        }
+    }
+
+   >.hero{
+    background-color: wheat;
+    height: calc(100vh - 75.19px);
+    >img{
+    
+       background-size: cover;
+       height: calc(100vh - 75.19px);
+       object-fit: cover;
+       width: 100%;
+   
+    }
+    >.buttons{
+        position: absolute;
+        bottom: 50px;
+        display: flex;
+      @media(max-width:600px){
+        width: 100%;
+        justify-content: center;
+       
+      }
+   
+    
+      >button{
+        padding: 20px 80px;
+        border-radius: 5px;
+        margin: 20px 15px;
+        @media(max-width:600px){
+          padding: 15px 60px;
+        }
+      }
+      >.btn-dog{
+        background-color: black;
+        color: white;
+      }
+      >.btn-cat{
+        background-color: $primary-color;
+      }
+
+    }
+   }
+
+   >.quotes-section{
+    min-height: 100vh;
+    background-color: $primary-color;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+padding: 0 50px;
+    >.second{
+
+      >img{
+        height: 400px;
+      }
+    }
+   }
+
+
+   >.side-bar{
+    position: fixed;
+    top: 75.16px;
+    right: 0;
+    height: 90vh;
+    width: 400px;
+    background-color: $primary-color;
+
+   }
+
+}
