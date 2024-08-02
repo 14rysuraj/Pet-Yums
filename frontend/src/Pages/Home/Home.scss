@@ -4,56 +4,7 @@
     min-height: 100vh;
     margin-top: 75.19px;
 
-    >.search{
-        height: 75px;
-        position: fixed;
-        top: 75.19px;
-        width: 100%;
-        background-color: white;
-        padding: 0 50px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        
-   
-
-        >.first{
-            display: flex;
-            gap: 20px;
-            align-items: center;
-            width: 95%;
-     
-           
-          
-            svg{
-                font-size: x-large;
-
-            }
-            >form{
-            width: 100%;
-            >input{
-                width: 100%;
-             padding: 20px 10px;
-             font-size: large;
-             border: none;
-             box-sizing: border-box;
-        &:focus{
-                outline: none;
-                border: none;
-            }
-            
-            }
-        }
-           
-        }
-        >button{
-            background-color: white;
-            font-size: larger;
-            padding: 0 10px;
-            
-
-        }
-    }
+  
 
    >.hero{
     background-color: wheat;

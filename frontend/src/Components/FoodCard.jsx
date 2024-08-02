@@ -1,18 +1,23 @@
 import "./FoodCard.scss";
 import img1 from "../assets/pic1.png";
+import { useNavigate } from "react-router-dom";
 
-function FoodCard() {
+function FoodCard({name,price,image,category}) {
+
+  const navigate = useNavigate()
+
   return (
     <>
       <div className="card-body">
-        <div className="first">
+        <div className="first"  onClick={()=>navigate(`/food/${name}`)} >
           <div className="img">
-            <img src={img1} alt="" />
+            {console.log(image)}
+            <img src={image} alt="image" />
           </div>
 
-          <p >GRAIN SOIFHOISIGHSEOI OFOEF BUT THEIR IS ONE PROBLEM</p>
+          <p > {name}</p>
 
-          <p>NRS : 500</p>
+          <p>NRS : { price}</p>
         </div>
 
         <button>ADD TO CART</button>

@@ -2,8 +2,10 @@ import "./Products.scss";
 import { NavLink } from "react-router-dom";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import FoodCard from "../../Components/FoodCard";
+import DogFoods from "../../Database/Database";
 
 function Products() {
+  console.log(DogFoods)
   return (
     <div className="products-body">
       <p>BUY HEALTHY FOODS FOR YOU PET</p>
@@ -20,14 +22,25 @@ function Products() {
       </div>
 
       <div className="products-list">
-        <FoodCard />
-        <FoodCard />
-        <FoodCard />
-        <FoodCard />
-        <FoodCard />
-        <FoodCard />
-        <FoodCard />
-        <FoodCard />
+
+        {
+          DogFoods.map((food,i) => 
+          (
+            <FoodCard
+              key={i}
+              image={food.image}
+              name={food.name}
+              price={food.price}
+              category={food.category}
+            />
+            
+            )
+            
+          )
+        }
+
+       
+       
       </div>
     </div>
   );
